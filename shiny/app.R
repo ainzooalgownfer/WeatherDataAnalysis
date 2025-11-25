@@ -1,8 +1,7 @@
-# ==========================================
-# Weather Forecast Dashboard (Shiny + API)
+
 # ==========================================
 # This Shiny app fetches weather forecast data
-# directly from your Spring Boot API and
+# directly from a Spring Boot API and
 # displays:
 # 1. Temperature over time
 # 2. Humidity over time
@@ -27,7 +26,7 @@ library(DT)  # for interactive table display
 # -------------------------------
 load_weather_api <- function() {
   
-  url <- "http://localhost:8080/api/weather"  # your API URL
+  url <- "http://localhost:8080/api/weather"  
   res <- GET(url)
   if(status_code(res) != 200) stop("API request failed")
   
