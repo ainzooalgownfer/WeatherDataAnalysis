@@ -7,6 +7,7 @@ Weather Data Analysis is a project that collects, stores, and analyzes weather d
 1. Fetch weather data using an API key.
 2. Store the collected data in a **MySQL database** via a **Spring Boot backend**.
 3. Perform data analysis using Python scripts.
+4. web interface using Shiny package R 
 
-> ⚠️ Currently, the web interface is **not implemented**. Python scripts must be run manually. Automation of scripts is a planned feature.
+> ⚠️ Python scripts and shin y app must be run manually. Automation of scripts is a planned feature.
 
