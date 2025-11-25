@@ -15,7 +15,7 @@ public class WeatherData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String city;
     private LocalDateTime datetime;
     private double temperature;
     private double humidity;
@@ -36,6 +36,13 @@ public class WeatherData {
     // Getters and Setters
     public Long getId() {
         return id;
+    }
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public void setId(Long id) {

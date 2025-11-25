@@ -16,6 +16,7 @@ weather_list = []
 
 for item in data['list']:
     weather_list.append({
+        "city": CITY,
         "datetime": item['dt_txt'],
         "temperature": item['main']['temp'],    
         "humidity": item['main']['humidity'],
@@ -26,5 +27,5 @@ for item in data['list']:
 
 # Save CSV locally
 df = pd.DataFrame(weather_list)
-df.to_csv("data/weather_data.csv", index=False)
+df.to_csv("../data/weather_data.csv", index=False)
 print("Weather data collected and saved to data/weather_data.csv")

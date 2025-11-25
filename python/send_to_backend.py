@@ -13,6 +13,7 @@ for index, row in df.iterrows():
     dt_iso = datetime.strptime(row['datetime'], "%Y-%m-%d %H:%M:%S").isoformat()
 
     payload = {
+        "city": str(row['city']),
         "datetime": dt_iso,
         "temperature": float(row['temperature']),
         "humidity": float(row['humidity']),
